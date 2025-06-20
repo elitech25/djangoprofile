@@ -3,62 +3,59 @@
 {% load static %}
 
 {% block content %}
+  <div class="profile">
+    <section class="look">
+      <div class="profile-box">
+        <img src=" {% static 'images/ChristEli.jpg' %} " alt="me" />
+        <h2>Christine Eli</h2>
+        <p>Software Developer</p>
 
-<div class="profile">
-  <section class="look">
-    <div class="profile-box">
-      <img src=" {% static 'images/ChristEli.jpg' %} " alt="me" />
-      <h2>Christine Eli</h2>
-      <p>Software Developer</p>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Work</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
-          </li>
-          <li>
-            <a href="#">Setting</a>
-          </li>
-          <li>
-            <a href="#">Signout</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-
-  <section>
-    <div class="love">
-      <h2>About</h2>
-      <p>
-        <strong>Full Name:</strong> Christine Eli
-      </p>
-      <p>
-        <strong>Email:</strong> danism09@gmail.com
-      </p>
-      <p>
-        <strong>Phone:</strong> 08078219101
-      </p>
-      <p>
-        <strong>Address:</strong> No: 25, mawamiwa street, Military zone, abuja
-      </p>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Setting</a>
+            </li>
+            <li>
+              <a href="#">Signout</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-  
-<br>
+    </section>
+
+    <section>
+      <div class="love">
+        <h2>About</h2>
+        <p>
+          <strong>Full Name:</strong> Christine Eli
+        </p>
+        <p>
+          <strong>Email:</strong> danism09@gmail.com
+        </p>
+        <p>
+          <strong>Phone:</strong> 08078219101
+        </p>
+        <p>
+          <strong>Address:</strong> No: 25, mawamiwa street, Military zone, abuja
+        </p>
+      </div>
+
+      <br />
       <div class="luv">
-      <h2>Recent Projects</h2>
-      <p>
-        <strong>Project Name:</strong>5000 mega power station, shiroro hydro-power
-      </p>
+        <h2>Recent Projects</h2>
+        <p>
+          <strong>Project Name:</strong>5000 mega power station, shiroro hydro-power
+        </p>
       </div>
-    </div>
-  </section>
-
-</div>
+    </section>
+  </div>
 {% endblock %}

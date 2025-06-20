@@ -27,6 +27,7 @@ urlpatterns = [
     path("ElaiTech/", views.profile, name="ElaiTech"),
     path("contact/", views.contact, name="contacts"),
     path("project/", include("project.urls")),
+    path("about/", views.about, name="About"),
     path("user/", include("user.urls"))
 
 ]
