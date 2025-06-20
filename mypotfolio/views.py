@@ -4,7 +4,7 @@ def home(request):
     return render(request, "index.html")
 
 def profile(request):
-    return render(request, "Elai-tech.html")
+    return render(request, "Elaitech.html")
 
 def contact(request):
     return render(request, "contact.html")

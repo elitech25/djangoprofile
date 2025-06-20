@@ -24,7 +24,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.home, name='homepage'),
-    path("Elai-Tech/", views.profile, name="Elai-Tech"),
+    path("ElaiTech/", views.profile, name="ElaiTech"),
     path("contact/", views.contact, name="contacts"),
     path("project/", include("project.urls")),
     path("user/", include("user.urls"))
