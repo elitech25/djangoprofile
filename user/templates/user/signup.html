@@ -10,7 +10,7 @@
     <form action="signup_form" method="post">
         {% csrf_token %}
         {{form}}
-        <button>submit</button>
+        <button class="signup_btn">submit</button>
      </form>
     <p>
         don't have an account? create one <a href="{% url 'user_login' %}" > Here</a>

@@ -314,3 +314,57 @@ nav a:hover {
   border: transparent;
 }
 
+
+/* signup styling */
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  height: 80vh;
+  align-items: center;
+}
+
+.signup > h1 {
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-shadow: -3px 5px 5px gray;
+}
+
+.signup > div {
+  height: fit-content;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: aqua;
+}
+
+.signup_form {
+ gap: 30px;
+ display: flex;
+ flex-direction: column; 
+}
+
+.signup_form > div {
+  gap: 10px;
+  display: flex;
+  color: azure;
+  flex-direction: column;
+}
+
+.signup_form > div >input {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: transparent;
+  outline: transparent;
+}
+
+.signup_btn {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: transparent;
+}
