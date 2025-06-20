@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <header>
+        <div class="logo">Elai-Tech<span class="man">.log</span></div>
+        <nav>
+            <ul>
+                <li><a href=" {% url "homepage" %}">home</a> </li>
+                 <li><a href="{% url "contacts" %}">contact</a> </li>
+                <li><a href=" {% url "Elai-Tech" %}">profile</a> </li>
+                <li><a href=" {% url "allProjects" %}">project</a> </li>
+               
+
+                <!--if the user is an admin show the add button so he can add more project done else don't show-->
+                {% if user.is_authenticated and user.is_superuser %}
+                 <li><a href=" {% url "add_Project" %}">Add</a> </li>
+                 {% endif %}
+
+                 <!--if the user is logged in then show a logout button else show a login button-->
+
+                {%if user.is_authenticated %}
+                    <form action="{% url 'user_logout' %}" method="post">
+                        {% csrf_token %}
+                        <button>log out</button>
+                    </form>
+                {% else %}
+                  <li><a href=" {% url "user_login" %}">login</a> </li>
+                {% endif %}
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+
+         {% endblock content %}
+
+    </main>
+
+    <footer>All right reserved &copy; 2025</footer>
+    
+</body>
+
+</html>

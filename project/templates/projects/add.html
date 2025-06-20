@@ -1,0 +1,17 @@
+ {% extends "layout.html" %}
+
+ {% block content %}
+
+ <h2>Welcome to Elaitech & construction Nig Ltd</h2>
+ <p>Add more project here</p>
+
+ <form action="" method="POST" enctype="multipart/form-data">
+
+  {% csrf_token %} 
+
+     {{form}}
+
+     <button>submit</button>
+</form>
+
+{% endblock content %}
